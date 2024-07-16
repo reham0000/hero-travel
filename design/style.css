@@ -190,17 +190,101 @@ input, select{
     gap: 1rem;
     margin-top: 1rem;
 }
+/* choose section styles */
 
+.choose-container > h3{
+    text-align: center;
+}
+.choose-container > p{
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    text-align: start;
+    gap: 1rem;
+}
+.card-1{
+    width: 573px;
+    height: 284px;
+    box-sizing: border-box;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+    margin-left: 2rem;
+}
+.card-2{
+    width: 573px;
+    height: 284px;
+    box-sizing: border-box;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    border-radius: 16px;
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-3{
+    width: 573px;
+    height: 284px;
+    box-sizing: border-box;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    border-radius: 16px;
+    background: rgba(233, 68, 68, 0.05);
+    margin-top: 2rem;
+    margin-left: 25rem;
+}
+.card-1 > i,h3,p{
+    text-align: start;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card-2 > i,h3,p{
+    text-align: start;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card-3 > i,h3,p{
+    text-align: start;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/* footer section styles */
+.last-container{
+    background: rgba(19, 19, 24, 0.05);
+    padding: 2rem 0;
+}
+.last-container .logo{
+    margin: 2rem auto;
+}
+.social{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+.social i{
+    height: 44px;
+    font-size: 24px;
+}
+.last-container hr{
+    margin: 2rem 0;
+}
+.menu{
+    display: none;
+}
 
 
 /* media screen styles */
 @media screen and (max-width:576px) {
-    .nav-bar{
-        flex-direction: column;
-    }
     .nav-options{
-        flex-direction: column;
-        margin-top: 25px;
+        display: none;
+    }
+    .menu{
+        display: block;
     }
     .explore-your-travel{
         flex-direction: column;
@@ -232,5 +316,28 @@ input, select{
     .row-2,
     .row-3{
         grid-template-columns: 1fr;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card-1{
+        align-items: center;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .card-2{
+        margin-left: 2rem;
+        align-items: center;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .card-3{
+        margin-left: 2rem;
+        align-items: center;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
     }
 }
