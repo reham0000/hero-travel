@@ -115,4 +115,70 @@ input, select{
     color: white;
     border: 1px solid rgb(255, 84, 0);
     border-radius: 8px;
+    font-weight: 800;
+}
+/* popular styles */
+.popular-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+.text-content p, 
+.text-content li{
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.text-content p, 
+.text-content li,
+.text-content h3{
+    text-align: left;
+}
+
+
+
+
+/* media screen styles */
+@media screen and (max-width:576px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-options{
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .explore-your-travel{
+        flex-direction: column;
+    }
+    h3{
+       width: 100%;
+    }
+    .explore-container p{
+        width: 100%;
+    }
+    .travel-inputs{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .travel-inputs input, select, button{
+        margin-bottom: 20px;
+    }
+    .popular-section{
+        grid-template-columns: 1fr;
+        width: 100%;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .image{
+        width: 50%;
+    }
+    
 }
