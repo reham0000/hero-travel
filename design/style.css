@@ -141,7 +141,55 @@ input, select{
 .text-content h3{
     text-align: left;
 }
-
+/* country section styles */
+.destination img{
+    width: 100%;
+    height: 300px;
+    filter: brightness(70%);
+}
+.destination h3{
+    color: rgb(19, 19, 24);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.destination > p{
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 0;
+    gap: 1rem
+}
+.country-card{
+    position: relative;
+}
+.country{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    transform: translate(-50%, -50%);
+}
+.row-2{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 0.6fr;
+    gap: 1rem;
+}
+.row-3{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
 
 
@@ -180,5 +228,9 @@ input, select{
     .image{
         width: 50%;
     }
-    
+    .row-1,
+    .row-2,
+    .row-3{
+        grid-template-columns: 1fr;
+    }
 }
